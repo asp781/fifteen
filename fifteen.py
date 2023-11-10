@@ -14,36 +14,15 @@ while x > 0:
             break
 
     # ход программы
-        if x == 14:
+        if x == 14 or x == 10 or x == 6 or x == 2:
             print('Я беру 1')
             x -= 1
-        elif x == 12:
-            print('Я беру 3')
-            x -= 3
-        elif x == 11:
+        elif x == 11 or x == 7 or x == 3:
             print('Я беру 2')
             x -= 2
-        elif x == 10:
-            print('Я беру 1')
-            x -= 1
-        elif x == 8:
+        elif x == 12 or x == 8 or x == 4:
             print('Я беру 3')
             x -= 3
-        elif x == 7:
-            print('Я беру 2')
-            x -= 2
-        elif x == 6:
-            print('Я беру 1')
-            x -= 1
-        elif x == 4:
-            print('Я беру 3')
-            x -= 3
-        elif x == 3:
-            print('Я беру 2')
-            x -= 2
-        elif x == 2:
-            print('Я беру 1')
-            x -= 1
         else:
             print('Я беру 1')
             x -= 1
