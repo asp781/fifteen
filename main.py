@@ -18,6 +18,7 @@ var = {1: 1,
        14: 1
 }
 
+x = 15
 
 class App(QMainWindow):
     def __init__(self):
@@ -29,8 +30,7 @@ class App(QMainWindow):
 
     def sel(self):
 
-        x = 15
-        # global x
+        global x
         print(f'x={x}')
         l = [0,
             self.c1_1.isChecked(),
@@ -51,11 +51,11 @@ class App(QMainWindow):
 
 
     # ход игрока
-        b = sum(l)
-        print(f'b={b}')
-        a = 15 - b # взял игрок
+        b = sum(l) # кол оставшихся галок (True) после хода игрока
+        a = x - b # вычесляем кол галок взятых (False) игроком (x - было до хода игрока)
         print(f'Игрок выбрал {a}')
-        x -= a # осталось
+        x -= a # вычисляем кол оставшихся галок (True) после хода игрока
+        print(f'b={b} x={x}')
 
         for i, j in enumerate(l, start=0):
             if not j and i != 0:
@@ -70,8 +70,8 @@ class App(QMainWindow):
                 exec(f'self.c1_{i}.setChecked(False)')
                 exec(f'self.c1_{i}.setCheckable(False)')
 
-        print(f'Я беру {var[x]}')
-        x -= var[x]
+        print(f'Я беру {var[x]}') # var[x] - кол взятых галок (False) программой
+        x -= var[x] # вычисляем кол оставшихся галок (True) после хода программы
 
 
      # конец игры
