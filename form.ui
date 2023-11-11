@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>624</width>
-    <height>430</height>
+    <width>700</width>
+    <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>90</y>
+      <y>230</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -42,8 +42,8 @@
    <widget class="QCheckBox" name="c1_2">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>90</y>
+      <x>90</x>
+      <y>230</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -58,8 +58,8 @@
    <widget class="QCheckBox" name="c1_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>90</y>
+      <x>150</x>
+      <y>230</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -74,8 +74,8 @@
    <widget class="QCheckBox" name="c1_4">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>90</y>
+      <x>210</x>
+      <y>230</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -93,8 +93,8 @@
    <widget class="QCheckBox" name="c1_5">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>90</y>
+      <x>270</x>
+      <y>230</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -122,7 +122,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>140</y>
+      <y>290</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -137,8 +137,8 @@
    <widget class="QCheckBox" name="c1_7">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>140</y>
+      <x>90</x>
+      <y>290</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -153,8 +153,8 @@
    <widget class="QCheckBox" name="c1_8">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>140</y>
+      <x>150</x>
+      <y>290</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -169,8 +169,8 @@
    <widget class="QCheckBox" name="c1_9">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>140</y>
+      <x>210</x>
+      <y>290</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -185,8 +185,8 @@
    <widget class="QCheckBox" name="c1_10">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>140</y>
+      <x>270</x>
+      <y>290</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -202,7 +202,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>190</y>
+      <y>350</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -217,8 +217,8 @@
    <widget class="QCheckBox" name="c1_12">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>190</y>
+      <x>90</x>
+      <y>350</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -233,8 +233,8 @@
    <widget class="QCheckBox" name="c1_13">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>190</y>
+      <x>150</x>
+      <y>350</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -249,8 +249,8 @@
    <widget class="QCheckBox" name="c1_14">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>190</y>
+      <x>210</x>
+      <y>350</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -263,10 +263,13 @@
     </property>
    </widget>
    <widget class="QCheckBox" name="c1_15">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>190</y>
+      <x>270</x>
+      <y>350</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -282,13 +285,14 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>90</y>
-      <width>261</width>
-      <height>271</height>
+      <y>230</y>
+      <width>351</width>
+      <height>341</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="readOnly">
      <bool>false</bool>
@@ -304,7 +308,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>270</y>
+      <y>420</y>
       <width>261</width>
       <height>41</height>
      </rect>
@@ -327,7 +331,7 @@ background-color: rgb(255, 0, 255);</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>350</y>
+      <y>530</y>
       <width>261</width>
       <height>41</height>
      </rect>
@@ -341,6 +345,22 @@ background-color: rgb(255, 0, 255);</string>
     </property>
     <property name="flat">
      <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>671</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Правила игры &amp;quot;Пятнадцать&amp;quot;: &lt;/p&gt;&lt;p&gt;Можно брать 1, 2 или 3 &amp;quot;галочки&amp;quot;.&lt;/p&gt;&lt;p&gt;Начинаете всегда Вы. &lt;/p&gt;&lt;p&gt;У кого останется последняя &amp;quot;галочка&amp;quot; - тот проиграл&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
