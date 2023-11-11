@@ -19,6 +19,7 @@ var = {1: 1,
 }
 
 x = 15
+log = []
 
 class App(QMainWindow):
     def __init__(self):
@@ -53,14 +54,15 @@ class App(QMainWindow):
     # ход игрока
         b = sum(l) # кол оставшихся галок (True) после хода игрока
         a = x - b # вычесляем кол галок взятых (False) игроком (x - было до хода игрока)
+        log.append(f'Игрок выбрал {a}\n')
         print(f'Игрок выбрал {a}')
-        x -= a # вычисляем кол оставшихся галок (True) после хода игрока
+        # x -= a # вычисляем кол оставшихся галок (True) после хода игрока
+        x = b # вычисляем кол оставшихся галок (True) после хода игрока
         print(f'b={b} x={x}')
 
         for i, j in enumerate(l, start=0):
             if not j and i != 0:
                 exec(f'self.c1_{i}.setCheckable(False)')
-
 
     # ход программы
         k = 0
@@ -70,16 +72,15 @@ class App(QMainWindow):
                 exec(f'self.c1_{i}.setChecked(False)')
                 exec(f'self.c1_{i}.setCheckable(False)')
 
+        log.append(f'Я беру {var[x]}\n')
         print(f'Я беру {var[x]}') # var[x] - кол взятых галок (False) программой
         x -= var[x] # вычисляем кол оставшихся галок (True) после хода программы
+        log.append(f'Осталось: {x}\n')
+        print(f'Осталось: {x}')
 
 
      # конец игры
-        if x > 1:
-            print(f'Осталось: {x}')
-            self.log.setText(f'Осталось {x}')
-
-        elif x == 1:
+        if x == 1:
             print(f'Осталось: 1')
             self.log.setText(f'Осталось {1}')
             print('Игра окончена! Вы проиграли')
@@ -93,8 +94,14 @@ class App(QMainWindow):
             self.select.setEnabled(False)
             self.reset.setEnabled(True)
 
+    # логирование
+        self.log.setText(''.join(log))
+
 
     def res(self):
+        global log, x
+        log = []
+        x = 15
         for i in range(1, 16):
             exec(f'self.c1_{i}.setCheckable(True)')
             exec(f'self.c1_{i}.setChecked(True)')
